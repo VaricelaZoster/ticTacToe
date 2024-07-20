@@ -1,0 +1,72 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0%;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.tic-tac-toe{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: minmax( 100px, auto) repeat(2,100px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.tic-tac-toe > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline:none;
+    background-color: rgba(255, 255,255, .75);
+    transition-duration: 0.3s;
+
+    &:disabled{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline:none;
+    background-color: rgba(255, 255,255, .75);
+    transition-duration: 0.3s;
+    }
+}
+
+.tic-tac-toe >button:hover{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline:none;
+    background-color: rgba(255, 255,255, .9);
+}
+
+.win-condition{
+    display: flex;
+    justify-content:center;
+    align-content: flex-start;
+    margin-top:0;
+}
+
+#newButton{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255,255, 0);
+    transition-duration: 0.2s;
+}
+
+#newButton:hover{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255,255, .5);
+}
+
+#win{
+    padding-right: 20px;
+}
